@@ -1,6 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <!-- notes:
+    line 8072 is healing part - number 3
+
+
+    -->
     <name>Battle</name>
     <events>
         <include>InputManagement</include>
@@ -8057,6 +8062,26 @@
                                         </event-block>
                                     </sub-events>
                                 </event-block>
+                                <event-block sid="1234567890123456">
+    <conditions>
+        <condition id="-7" name="Compare instance variable" sid="9876543210987654" type="Attack9Patch">
+            <param id="0" name="Instance variable">Color</param>
+            <param id="1" name="Comparison">0</param>
+            <param id="2" name="Value">3</param>
+        </condition>
+        <condition id="1" name="Is overlapping another object" sid="1122334455667788" type="PlayerHitbox">
+            <param id="0" name="Object">Attack9Patch</param>
+        </condition>
+    </conditions>
+    <actions>
+        <!-- Heal the player -->
+        <action id="-11" name="Add to" sid="9988776655443322" type="System">
+            <param id="0" name="Variable">HP</param>
+            <param id="1" name="Value">50</param>
+        </action>
+        
+    </actions>
+</event-block>
                                 <event-block sid="2061583751641791">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="9210133633176591" type="Attack9Patch">
