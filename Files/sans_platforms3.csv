@@ -19,4 +19,6 @@
 0.5,JMPABS,8,,,,,,
 0,BoneV,517,349,35,2,120,,
 0.5,JMPABS,8,,,,,,
+0,SansText,"knowing that one day, without any warning...",,,
+0,SansText,it's all going to be reset.,,,
 0,EndAttack,,,,,,,
