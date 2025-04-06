@@ -59,4 +59,6 @@
 0,ADD,Total,$Total,25,,
 0,JMPABS,Begin,,,,
 0,:End,,,,,
+0,SansText,our reports showed a massive anomaly in the timespace continuum.,,,,
+0,SansText,timelines jumping left and right, stopping and starting...,,,,,
 7,EndAttack,,,,,
